@@ -61,4 +61,4 @@ RUN python $LASER/tasks/embed/decode.py test_embed.raw
 EXPOSE 80
 
 COPY ./app.py /app/app.py
-
+COPY ./tq.py /app/tq.py
