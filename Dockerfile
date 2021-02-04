@@ -62,3 +62,5 @@ EXPOSE 80
 
 COPY ./app.py /app/app.py
 
+WORKDIR /app
+ADD . /app
