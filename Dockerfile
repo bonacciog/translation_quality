@@ -1,6 +1,5 @@
 FROM continuumio/miniconda3
 
-MAINTAINER Gilles Bodart <gillesbodart@users.noreply.github.com>
 
 RUN conda create -n env python=3.6
 RUN echo "source activate env" > ~/.bashrc
@@ -63,4 +62,3 @@ EXPOSE 80
 
 COPY ./app.py /app/app.py
 
-CMD ["/bin/bash"]
